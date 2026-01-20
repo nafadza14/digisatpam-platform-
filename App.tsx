@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import LandingPage from './components/LandingPage.tsx';
+import LandingPage from './components/LandingPage';
 import PWASatpam from './components/PWASatpam';
 import ManagementDashboard from './components/ManagementDashboard';
 import KawasanDashboard from './components/KawasanDashboard';
@@ -61,7 +61,7 @@ const App: React.FC = () => {
       case UserRole.KAWASAN_ADMIN:
         return <KawasanDashboard user={user} onLogout={handleLogout} />;
       case UserRole.PLATFORM_ADMIN:
-        return <ManagementDashboard user={user} onLogout={handleLogout} />; // Sementara menggunakan Dashboard yang sama
+        return <ManagementDashboard user={user} onLogout={handleLogout} />;
       default:
         return <LandingPage onNavigate={handleLogin} />;
     }
