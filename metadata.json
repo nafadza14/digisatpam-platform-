@@ -1,0 +1,9 @@
+{
+  "name": "Digisatpam",
+  "description": "Platform Digital Satuan Pengamanan Terintegrasi Kawasan Industri. Monitoring real-time, patroli digital, dan pelaporan keamanan terpusat dengan validasi GPS Geofencing.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ]
+}
